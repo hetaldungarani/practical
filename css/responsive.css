@@ -1,0 +1,139 @@
+/*body.theme-picton-blue-white-ebony .site-logo img {
+  height: auto;
+  position: static;
+}*/
+
+@media (max-width: 1199px) {
+
+table.product-details {
+  min-width: 1000px;
+}
+
+#language-form .btn-group {
+  width: 100px !important;
+}
+
+.page-content .table-responsive {
+  overflow-x: auto; 
+}
+
+
+}
+
+
+@media (max-width: 992px) {
+
+body.theme-picton-blue-white-ebony .site-header .site-logo {
+ padding:0;
+}
+
+body.theme-picton-blue-white-ebony .site-header .site-logo img {
+  /*margin-top: 15px;*/
+  width: 150px;
+}
+
+.site-header .hamburger {
+top:0;
+}
+
+}
+
+@media (max-width: 991px) {
+
+body.theme-picton-blue-white-ebony .site-header .site-logo {
+ background-color:transparent;
+}
+
+}
+
+@media (max-width: 767px) {
+
+.setstatus {
+ float:left;
+ position: static;
+}
+
+.product-images-list .thumbnail.col-md-4, 
+.product-images-list #upload_image > div {
+  width:50%;
+}
+
+.product-add-page .col-md-6 {
+  float: left;
+  width: 100%;
+}
+
+body.theme-picton-blue-white-ebony .site-header .site-logo {
+  padding: 0;
+  width: auto;
+  display: table;
+  margin: 0 auto;
+  float: none;
+}
+
+.site-header {
+ position:static;
+ padding-top:0;
+ height:110px;
+}
+
+.site-header .site-header-content .site-header-content-in {
+  margin: 10px 0 0 0;
+}
+
+.site-header .site-header-content .site-header-content-in h5 {
+  margin:  5px 0 0 0;
+}
+
+.page-content {
+ padding-top:30px;
+}
+
+.site-header .site-header-content {
+ margin: 0;
+}
+
+.site-header-content-in .col-sm-2 {
+  width: auto;
+  float: left;
+}
+
+.side-menu .jspPane {
+  padding-top: 10px !important;
+}
+
+}
+
+@media (max-width: 639px) {
+
+body.theme-picton-blue-white-ebony .site-header .site-logo {
+ float:left;
+}
+
+.site-header-content-in .col-sm-2 {
+  position: absolute;
+  top: 11px;
+  right: 30px;
+}
+
+#language-form select.form-control {
+  width: 110px;
+}
+
+.site-header .hamburger {
+  top: 15px;
+  position: absolute;
+  right: 10px;
+  z-index: 100;
+}
+
+}
+
+@media (max-width: 479px) {
+
+body.theme-picton-blue-white-ebony .site-header .site-logo img {
+  width: 140px;
+  margin-top: 10px;
+}
+
+}

@@ -1,0 +1,17 @@
+.btn.btn-primary.margin-bottom-five {
+  float:right;
+}
+
+.table-margin.form-buttons .btn {
+ float:right;
+}
+
+.dropdown-item .font-icon {
+margin-top:6px;
+}
+
+.table-margin.form-buttons .btn {
+  float: right;
+  margin-left: 10px;
+  margin-right: 0;
+}
