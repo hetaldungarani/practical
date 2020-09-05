@@ -12328,6 +12328,16 @@ hr.margin-4 {
     background-color: #000;
     border-color: #000;
 }
+.btn.btn-red {
+    background-color: red;
+    border-color: red;
+    cursor: no-drop;
+}
+.btn.btn-green {
+    background-color: green;
+    border-color: green;
+    cursor: no-drop;
+}
 .btn.btn-primary:hover {
     background-color: #a6989b;
     border-color: #a6989b;

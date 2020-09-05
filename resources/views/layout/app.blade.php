@@ -14,7 +14,7 @@
     @include('layout.partials.sidebar')
   
     <div class="page-content">
-    	@include('layout.partials.contentheader')
+    
         <div class="container-fluid">
             @yield('main-content')
         </div><!--.container-fluid-->

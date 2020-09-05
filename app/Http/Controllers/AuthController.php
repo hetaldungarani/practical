@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Validator,Redirect,Response;
-use App\Repositories\AuthRepository;
+use App\Repositories\Repository;
 use App\Http\Requests\UserRequest;
 use App\Http\Requests\LoginRequest;
 use Illuminate\Support\Facades\Auth;
@@ -13,10 +13,10 @@ use Session;
 
 class AuthController extends Controller
 {
-    private $AuthRepository;
-    public function __construct(AuthRepository $AuthRepository)
+    private $Repository;
+    public function __construct(Repository $Repository)
     {
-        $this->AuthRepository = $AuthRepository;
+        $this->Repository = $Repository;
     }
     public function index()
     {
@@ -24,12 +24,12 @@ class AuthController extends Controller
     }  
     public function register()
     {
-        $hobbies  = $this->AuthRepository->getHobbies();
+        $hobbies  = $this->Repository->getHobbies($isprepend = 0);
         return view('register',compact('hobbies'));
     }
     public function postLogin(LoginRequest $request)
     {
-        $credentials  = $this->AuthRepository->getCredentials($request);
+        $credentials  = $this->Repository->getCredentials($request);
         if (Auth::attempt($credentials)) {
             return redirect()->intended('users');
         }
@@ -37,7 +37,7 @@ class AuthController extends Controller
     }
     public function postRegister(UserRequest $request)
     {  
-        $this->AuthRepository->createUser($request);
+        $this->Repository->createUser($request);
         return Redirect::to("users");
     }
    

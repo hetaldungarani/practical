@@ -1,8 +1,6 @@
 @extends('layout.app')
 
-@section('htmlheader_title')    
-Header Title
-@endsection
+
 
 @section('main-content')
 
@@ -18,17 +16,21 @@ Header Title
                 <section class="box-typical box-typical-padding search-form-wrapper">
                     <div class="row">
                         <div class="col-md-6 form-group">
-                        <label>search </label>
-                        <input type="text" name="searchtxt" id="searchtxt" class="form-control" onkeypress="return runScript(event)">
+                           {!! Form::select('role_id', $hobbies, '', ['class' => 'form-control m-bot15','id'=>'field_hobby']) !!}
+                        </div>
+
+                        <div class="col-md-6 form-group">
+                            <select class="form-control m-bot15" id="field_gender">
+                                <option value="">Select Gender</option>
+                                <option value="1">Male</option>
+                                <option value="0">Female</option>
+                            </select>
                         </div>
                        
                     </div>
                     <section class="proj-page-add-txt table-margin form-buttons">
                         <fieldset class="form-group">
-                        <button id="srchbtn" name="srchbtn" onclick="getSearch();" class="btn btn-primary btn-sm">sdfdfrr </button>
-
-                        <button id="clearbtn" onclick="clearSearch();" class="btn btn-secondary btn-sm">sefefe</button>
-
+                        <button id="srchbtn" name="srchbtn" onclick="getSearch();" class="btn btn-primary btn-sm">Search</button>
                         <div class="clear"></div>
                         </fieldset>
                     </section>  

@@ -21,5 +21,6 @@ Route::get('users', 'UserController@index');
 Route::post('post-login', 'AuthController@postLogin'); 
 Route::get('register', 'AuthController@register');
 Route::get('send_request', 'UserController@send_request');
+Route::get('search_user', 'UserController@search_user');
 Route::post('post-register', 'AuthController@postRegister'); 
 Route::post('logout', 'AuthController@logout');
